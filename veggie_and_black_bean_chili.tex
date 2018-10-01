@@ -1,0 +1,62 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 2 cups\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Veggie And Black Bean Chili}
+    \ingred{
+        \item Yellow Onion (chopped), 1 1/2 cups
+        \item Bell Peppers (chopped), 1 cup
+        \item Corn (frozen), 2 cups
+        \item Black Beans (cooked), 3 cups
+        \item Garlic Clove (minced), 2 tbsp
+        \item Mild Chili Powder, 2 tbsp
+        \item Cummin, 1 tbsp
+        \item Cayenne Pepper, 1/4 tsp
+        \item Serrano Pepper (seeded, minced), 3
+        \item Zucchanni (diced), 1
+        \item Musshrooms (sliced), 1 1/2 lbs
+        \item Vine Tomatos (cleaned, chopped), 4
+        \item Veg Stock, 1 cup
+        \item Tomato Puree, 1 29oz can        
+    }
+
+    \instruct{
+        \item Cook peppers onions and garlic until onions are translucent
+        \item Add zuke, corn mushrooms and cook till mushrooms are soft
+        \item Add all seasoning and mix throughly
+        \item Add tomatos, beans, stock, tomato puree and bring to a boil
+        \item Reduce heat to a simmer for about 20m
+        \item Serve w/ Brown Rice and cilantro
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
