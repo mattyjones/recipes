@@ -1,0 +1,56 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 2 cups\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Sloppy Joes}
+    \ingred{
+        \item Yellow Onion (chopped), 1
+        \item Bell Peppers (chopped), 2
+        \item Ground Beef, 2 1/2 lbs
+        \item Garlic Clove (minced), 5
+        \item Light Brown Sugar, 2 tbsp
+        \item Dry Mustard, 1 tsp
+        \item Mild Chili Powder, 2 tsp
+        \item Worchestire Sauce, to taste
+    }
+
+    \instruct{
+        \item Brown ground beef and drain the fat and set aside
+        \item Cook peppers and onions till onions are translucent then set aside
+        \item Combine remaining ingredients, mix completely and bring to a boil
+        \item Add beef, onions, and peppers to mixture and combine
+        \item Reduce heat to a simmer and cook for 20m
+        \item Serve on a Bulkie roll with loaded tater tots
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
