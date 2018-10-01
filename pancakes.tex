@@ -1,0 +1,70 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}:\ }
+    \renewcommand{\inghead}{\textbf{Ingredients}:\ }
+    \renewcommand{\yieldhead}{\textbf{Yield}: 2 Dozen\ }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 1 Pancake\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: 9 per serving\ }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Pancakes}
+    \ingred{
+        \item 2\% Milk, 2 Cups
+        \item 2 Eggs
+        \item Unsalted Butter (melted), 4 Tbsp
+        \item Pancake Mix, 2 Cups
+    }
+
+    \instruct{
+        \item Combine egg whites and milk in a bowl and mix well
+        \item Combine egg yorks and butter in a bowl and mix well
+        \item Add liquid ingredients to dry mix
+        \item Wisk mixture by hand enough to combine
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+    % \yield
+    % \servings
+    % \carbs
+
+
+    % \health{
+    %      & 2\% Milk & 1 & Cup & 12 \\
+    %      & Eggs & 1 &  & 0 \\
+    %     %  & Unsalted Butter & 1 & Tbsp & 0 \\
+    %     %  & Pancake Mix & 1 & Cup & 100.5
+    % }
+
+    % \begin{table}[]
+    %     \begin{tabular}{lllll}
+    %      & 2\% Milk & 1 & Cup & 12 \\
+    %      & Eggs & 1 &  & 0 \\
+    %      & Unsalted Butter & 1 & Tbsp & 0 \\
+    %      & Pancake Mix & 1 & Cup & 100.5
+    %     \end{tabular}
+    %     \end{table}
+
+
+    \end{document}
