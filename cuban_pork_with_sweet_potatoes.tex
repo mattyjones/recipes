@@ -1,0 +1,56 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 3 oz of Pork\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Cuban Pork W/ Sweet Potatoes}
+    \ingred{
+        \item Sweet Potato (cut into 1/2" pieces), 1 lb
+        \item Pork Loin (cut into 1/2" pieces), 1 lb
+        \item Diced Tomatoes, 1 14oz can
+        \item Jalapano (seeded, small dice), 1
+        \item Garlic Clove, 1
+        \item Orange Juice, 1/4 cup
+        \item Green Onion (chopped), 2
+        \item Table Salt, 1/2 tsp
+        \item Pepper, 1/4 tsp
+        \item Cummin, 1/4 tsp
+        \item Lime Juice, 2 tbsp
+        \item Cilantro, 2 tbsp
+    }
+
+    \instruct{
+        \item Place all ingredients into a slow cooker
+        \item Cook on low for 7 hours
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
