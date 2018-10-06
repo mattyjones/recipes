@@ -1,0 +1,67 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serves}: 10 }
+    \renewcommand{\carbshead}{\textbf{Carbs}: 26 }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Onion Braised Brisket}
+    \ingred{
+        \item Flat-cut Beef Brisket (trmmed 1/4" thick), 5 lbs
+        \item Vegtable Oil, 1 tsp
+        \itme Yellow Onion (cut into half-moons 1/2" thick), 3 lbs
+        \item Salt, taste
+        \item Black Pepper, taste
+        \item Dark Brown Sugar, 2 tbsp
+        \item Garlic Cloves (minced), 6
+        \item Oregano (fresh minced), 1 tsp
+        \item Smoked Paprika, 1 tsp
+        \item Bob's Red Mill Whole Wheat Flour, 2 tbsp
+        \item Fire Roasted Diced Tomatoes, 1 14.5oz can
+        \item Dry Red Wine, 1/2 cup
+        \item Chicken Stock, 1/2 cup
+        \item Tomato Paste, 1 tbsp
+        \item Rosemary (whole sprig), 2
+        \item Carrots (3" half-moons), 1 1/2 lbs 
+    }
+
+    \instruct{
+        \item Pat brisket dry and season w/ salt and pepper
+        \item Braise brisket until well browned on both sides then transfer to a roasting pan
+        \item Add onions, brown sugar, 1/4 tsp salt, 1/4 tsp pepper to heavy pan and cook onions w/ 1 tbsp of reserved fat
+        \item Stir in garlic, oregano, and paprika and cook for 1 minute
+        \item Sprinkle flour over onion and mix and cook for 1 minute
+        \item Add tomatoes, wine, stock, and paste and cook till thick
+        \item Pour mixture over brisket and top with rosemary, cover tightly and cook for 3 hours @ 325
+        \item Pour carrots around brisket and recover and cook till carrots are tender
+        \item Remove from oven and let stand 30 minutes
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

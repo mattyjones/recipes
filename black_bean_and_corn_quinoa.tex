@@ -1,0 +1,60 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 1 cup\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Black Bean and Corn Quiona}
+    \ingred{
+        \item Quinoa, 1/2 cup
+        \item Veg Stock, 3 cups
+        \item Olive Oil, 3 tbsp
+        \item Cilantro (chopped), 3 tbsp
+        \item Lime juice, 2 tbsp
+        \item Jalapeno (chopped and seeded), 1
+        \item Red Bell Pepper (chopped), 1
+        \item Shallot (chopped fine), 1
+        \item Garlic Clove (minced), 2
+        \item Corn (thawed), 12oz
+        \item Black Beans (raw), 16oz 
+        \item Mild Chili Powder, 1 tsp
+        \item Cummin, 1/2 tsp
+    }
+
+    \instruct{
+        \item Cook and drain black beans following the package directions
+        \item Cook Quiona in the veggie stock following the package directions
+        \item Cook peppers, shallots and garlic until shallots are translucent
+        \item Add beans, corn, and seasoning and cook till peppers are soft
+        \item Combine corn salsa, quinoa, and cilantro to a bowl and fold together gently
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

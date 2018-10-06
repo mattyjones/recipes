@@ -1,0 +1,54 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 1 month\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Enchilada Sauce}
+    \ingred{
+        \item Vegtable Oil, 1 tbsp
+        \item Yellow Onion (fine chop), 1
+        \item Chipolte Peppers in Adobo Sauce (minced), 1 tbsp
+        \item Garlic Clove (minced), 5
+        \item Mild Chili Powder, 2 tbsp
+        \item Cummin, 2 tsp
+        \item Coriander, 1 tsp
+        \item Tomato Sauce, 1 28oz can
+        \item Chicken Stock, 2 cups
+    }
+
+    \instruct{
+        \item Add oil and onion to heavy pan and cook till onion is tender
+        \item Add garlic, chili powder, adobo sauce, cumin, and coriander and cook for one minute, stiring constantly
+        \item Stir in tomato sauce and stock and bring to a boil and then simmer till slightly thickened
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

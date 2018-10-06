@@ -1,0 +1,56 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 1 breast or thigh\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Rosemary Chicken w/ Maple Orange Glaze}
+    \ingred{
+        \item Orange Juice, 1 cup
+        \item Dry White Wine, 1/2 cup
+        \item Maple Syrup, 1/2 cup
+        \item Rosemary (fine chopped), 2 tsp
+        \item Salt, 1/2 tsp
+        \item Black Pepper, 1/2 tsp
+        \item Unsalted Butter, 2 tbsp
+        \item Extra Virgin Olive Oil, 2 tbsp 
+        \item Boneless Chicken Breast, 4
+    }
+
+    \instruct{
+        \item Combine ornage juice and wine, then bring to a boil and reduce for 5 minutes
+        \item Add sryup and then continue with a low boil for 5 minutes or till it thickens
+        \item Mix rosemary, salt, and pepper and then coat both sides of the chicken
+        \item Melt butter and olive oil in a heavy pan and braise chicken till brown on both sides
+        \item Add sauce to pan and bring to a boil then simmer till chicken is cooked through
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

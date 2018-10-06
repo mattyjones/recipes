@@ -1,0 +1,55 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Chicken Enchiladas}
+    \ingred{
+        \item Cilantro (chopped), 1/4 cup
+        \item Shallot (chopped fine), 1
+        \item Anaheim Chili Peppers (seeded, small dice), 4 
+        \item Boneless Chicken Breasts, 3 lbs
+        \item 6" Corn tortilla, 24
+        \item Shredded Cheese, 2 1/2 cups
+        \item Enchilida sauce, 6 cups
+    }
+
+    \instruct{
+        \item Put sauce in heavy pan and submerge chicken in it, cover and simmer till chicken is cooked
+        \item Remove pot from burner and transfer chicken to a plate and shred
+        \item Cook Quiona in the veggie stock following the package directions
+        \item Cook peppers, shallots and garlic until shallots are translucent
+        \item Add beans, corn, and seasoning and cook till peppers are soft
+        \item Combine corn salsa, quinoa, and cilantro to a bowl and fold together gently
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
