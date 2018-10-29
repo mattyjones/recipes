@@ -1,0 +1,63 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: 10 Bars}
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 1 Bar\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+    \pagenumbering{gobble}
+
+    \begin{document}
+    \recipe{Breakfast Bars}
+    \ingred{
+        \item Rolled Oats, 2 cups
+        \item Quiona, 3/4 cup
+        \item Bulgur Wheat, 1/4 cup
+        \item Pumpkin or Sunflower Seeds, 1 1/4 cups
+        \item Dried Cranberries, 1/2 cup
+        \item Maple Syrup, 1/2 cup
+        \item Sun Butter, 1/2 cup
+        \item Table Salt, 1/4 tsp
+        \item Coconut Oil, 1/4 cup
+        \item Brown Sugar, 2 tbsp
+        \item Vanilla Extract, 1 tsp
+    }
+    
+    \instruct{
+        \item Heat your oven to 350.
+        \item Line a 9 x 13-inch baking dish so some of the paper goes over the edge.
+        \item Heat a large skillet over a medium-low heat and add the oats, quinoa, and millet. Stir them all around until they start to smell toasted, about 3 minutes. 
+        \item Combine the seedss and cranberries in a large bowl. Pour in the toasted oat mix and the salt and mix together.
+        \item In a small saucepan, combine the maple syrup, peanut butter, oil, sugar, and vanilla and warm until everything is melted and then remove from the heat.
+        \item Pour this all over the dry mix and stir until everything is coated. 
+        \item Pour the mixture into the baking dish and press it down with a spoon to even it out and pack it.
+        \item Cook in the oven until it looks toasted, 25 to 30 minutes. 
+        \item Let it cool to room temperature in the pan tand then move to the fridge.hen throw it into the fridge. 
+        \item When it’s completely cooled, cut into bars. They keep best in the fridge.
+    }
+
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
