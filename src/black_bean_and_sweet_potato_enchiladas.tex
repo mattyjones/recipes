@@ -1,0 +1,58 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+
+    \begin{document}
+    \recipe{Black Bean and Sweet Potato Enchiladas}
+    \ingred{
+        \item Cilantro (chopped), 1/4 cup
+        \item Sweet Potato (diced), 1
+        \item Black Beans (cooked), 1 cup 
+        \item Kidney Beans (cooked), 1 cup
+        \item 8" Flour Tortilla
+        \item Shredded Cheese, 2 1/2 cups
+        \item Enchilida sauce, 6 cups
+        \item Yellow Onion (diced), 1 large
+        \item Yellow Squash (diced), 1 large
+    }
+
+    \instruct{
+        \item Steam sweet potato until soft
+        \item Cook squash until soft
+        \item Mash sweet potatos and then fold in beans and squash
+        \item Pour enough of the sauce to cover the bottom of a 9x13 baking dish
+        \item Add mixture to flour tortilla and roll, then place tightly in baking dish
+        \item When dish is packed as a single layer, add remaining sauce to cover enchiladas
+        \item Add cheese and bake in the oven at 350 for 45 minutes
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

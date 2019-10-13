@@ -1,0 +1,61 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: 1 cup\ }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: 5 Days\ }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+    \pagenumbering{gobble}
+
+    \begin{document}
+    \recipe{Minestrone Soup}
+    \ingred{
+        \item Olive Oil, 2 tbsp
+        \item Yellow Onion (diced), 1 medium
+        \item Garlic Clove (minced), 4
+        \item Celery (diced), 2 stalks
+        \item Carrot (diced), 1 large
+        \item Green Beans, 1 1/2 cups
+        \item Oragano, 1 tsp
+        \item Basil, 1 tsp
+        \item Salt, taste
+        \item Pepper, taste 
+        \item Diced Tomatos, (1) 28oz can
+        \item Crushed Tomatos, (1) 14oz can
+        \item Chicken Broth, 6 cups 
+        \item Kidney Beans, (1) 15oz can
+        \item Small Pasta Shape, 1 cup
+    }
+
+    \instruct{
+        \item Sweat celery, onions, and carrots in a large soup pot until soft
+        \item Drain and rinse beans, then add to soup pot
+        \item Add remaining Ingredients except pasta to soup pan
+        \item Bring pot to a boil and then reduce heat to a low simmer for 30m or until vegtables are fully cooked
+        \item Serve in a bowl with pasta
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
