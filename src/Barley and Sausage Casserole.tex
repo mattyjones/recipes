@@ -1,0 +1,56 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+    \pagenumbering{gobble}
+
+    \begin{document}
+    \recipe{Barley and Sausage Casserole}
+    \ingred{
+        \item Bulk Sweet Italian Sausage, 4 oz
+        \item Garlic Clove (minced), 2 Cloves
+        \item Button mushrooms (sliced), 3 cup
+        \item Yellow Onion (diced), 1/2 cup
+        \item Barley (cooked), 2 cup
+        \item Pasta Sauce, 1 1/2 cup
+        \item Mozzarella Cheese, 6 oz
+        \item Roasted Red Peppers, 1/2 cup
+        \item Fresh Basil (chopped), 2 tbsp
+    }
+
+    \instruct{
+        \item Add pork and garlic to the slow cooker
+        \item Add salt, lime juice, cumin, cinnamon, and Cayenne to a small bowl
+        \item Combine spice mixture, orange juice, and broth
+        \item Pour broth mixture into slow cooker, use tongs to ensure pork is well covered
+        \item Cook for 7 hours on low or until pork is falling apart.
+        \item Remove pork and shred, add salt and pepper to taste
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}

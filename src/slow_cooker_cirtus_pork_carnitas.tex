@@ -1,0 +1,56 @@
+\documentclass[a4paper]{recipe}
+    \usepackage[T1]{fontenc}
+    \usepackage{bookman}
+    \usepackage{textcomp}
+
+    \newcommand{\bsi}[2]{%
+      \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+      \fontsize{#1}{#2}\selectfont}
+
+    \renewcommand{\instructhead}{\textbf{Directions}: }
+    \renewcommand{\inghead}{\textbf{Ingredients}: }
+    \renewcommand{\yieldhead}{\textbf{Yield}: }
+    \renewcommand{\servingshead}{\textbf{Serving Size}: }
+    \renewcommand{\carbshead}{\textbf{Carbs}: }
+    \renewcommand{\lifehead}{\textbf{Shelf Life}: }
+
+    \renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+    \makeatletter
+    \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+    \makeatother
+
+    \setlength\parindent{0pt}
+    \setlength\parskip{2ex plus 0.5ex}
+    \pagenumbering{gobble}
+
+    \begin{document}
+    \recipe{Slow Cooker Citrus Pork Carnitas}
+    \ingred{
+        \item Pork Butt or Shoulder, 3 lbs
+        \item Garlic Clove (minced), 4 Cloves
+        \item Coarse Sea Salt, 2 tbsp
+        \item Cumin (ground), 1 tbsp
+        \item Lime Juice, 1/4 cup
+        \item Cinnamon (ground), 1 tsp
+        \item Cayenne Pepper, 1 tsp
+        \item Chicken Broth, 1 cup
+        \item Orange Juice, 1 cup
+    }
+
+    \instruct{
+        \item Add pork and garlic to the slow cooker
+        \item Add salt, lime juice, cumin, cinnamon, and Cayenne to a small bowl
+        \item Combine spice mixture, orange juice, and broth
+        \item Pour broth mixture into slow cooker, use tongs to ensure pork is well covered
+        \item Cook for 7 hours on low or until pork is falling apart.
+        \item Remove pork and shred, add salt and pepper to taste
+    }
+
+    \yieldhead \\
+    \servingshead \\
+    \carbshead \\
+    \lifehead
+
+
+    \end{document}
